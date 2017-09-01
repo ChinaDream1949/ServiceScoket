@@ -12,6 +12,8 @@
 		CFA60F781F59176500DE6918 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA60F771F59176500DE6918 /* ViewController.m */; };
 		CFA60F7A1F59176500DE6918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA60F791F59176500DE6918 /* Assets.xcassets */; };
 		CFA60F7D1F59176500DE6918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA60F7B1F59176500DE6918 /* Main.storyboard */; };
+		CFA60F891F59180E00DE6918 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA60F861F59180E00DE6918 /* GCDAsyncSocket.m */; };
+		CFA60F8A1F59180E00DE6918 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA60F881F59180E00DE6918 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		CFA60F791F59176500DE6918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFA60F7C1F59176500DE6918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFA60F7E1F59176500DE6918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA60F851F59180E00DE6918 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		CFA60F861F59180E00DE6918 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		CFA60F871F59180E00DE6918 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		CFA60F881F59180E00DE6918 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		CFA60F6F1F59176500DE6918 /* ServiceScoket */ = {
 			isa = PBXGroup;
 			children = (
+				CFA60F841F59180400DE6918 /* CocoaAsyncSocket */,
 				CFA60F701F59176500DE6918 /* AppDelegate.h */,
 				CFA60F711F59176500DE6918 /* AppDelegate.m */,
 				CFA60F761F59176500DE6918 /* ViewController.h */,
@@ -74,6 +81,17 @@
 				CFA60F741F59176500DE6918 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFA60F841F59180400DE6918 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				CFA60F851F59180E00DE6918 /* GCDAsyncSocket.h */,
+				CFA60F861F59180E00DE6918 /* GCDAsyncSocket.m */,
+				CFA60F871F59180E00DE6918 /* GCDAsyncUdpSocket.h */,
+				CFA60F881F59180E00DE6918 /* GCDAsyncUdpSocket.m */,
+			);
+			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA60F891F59180E00DE6918 /* GCDAsyncSocket.m in Sources */,
+				CFA60F8A1F59180E00DE6918 /* GCDAsyncUdpSocket.m in Sources */,
 				CFA60F781F59176500DE6918 /* ViewController.m in Sources */,
 				CFA60F751F59176500DE6918 /* main.m in Sources */,
 				CFA60F721F59176500DE6918 /* AppDelegate.m in Sources */,
